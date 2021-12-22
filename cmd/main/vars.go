@@ -6,6 +6,8 @@ import (
 	"time"
 
 	"gorm.io/gorm/logger"
+
+	"github.com/nafeem-evatix/casbin-acl/internal/consts"
 )
 
 var (
@@ -20,8 +22,14 @@ var (
 	)
 
 	commonRequest = &requestDefinition{
-		Subject: "user123",
-		Object:  "api/v1/user",
-		Action:  "get",
+		Subject: consts.User123,
+		Object:  consts.Data1,
+		Action:  consts.Action,
+	}
+
+	adminRequest = &requestDefinition{
+		Subject: consts.AdminRole,
+		Object:  consts.Data1,
+		Action:  consts.Action,
 	}
 )
