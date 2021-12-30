@@ -16,7 +16,7 @@ func main() {
 	loadPolicy(enforcer)
 
 	// Simple ACL
-	testSimpleACL(enforcer)
+	// testSimpleACL(enforcer)
 
 	// RBAC
 	testRBAC(enforcer)
